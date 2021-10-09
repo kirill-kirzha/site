@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+ }
+body {
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.navpannel {
+	width: 100%;
+	position: fixed;
+	height: 110px;
+	background-color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	top: 0px;
+	left: 0px;
+}
+.logo {
+	color: black;
+	font-size: 25px;
+	padding-top: 32px;
+	padding-left: 80px;
+	font-weight: 300;
+	padding-right: 350px;
+
+}
+.navbuttons {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 40px;
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.15s ease-in;
+}
+.navpannel:nth-child(2) {
+	padding-left: 100px;
+}
+.navbuttons:hover {
+	text-decoration: underline;
+}
+.main {
+	height: 800px;
+	width: 100%;
+	margin: 110px 0px 0px 0px;
+}
+.main1 {
+	background-color: #fadbca;
+	width: 473px;
+    height: 800px;
+    margin-right: 0px;
+    float: left;
+    margin-left: 70px;
+}
+.header {
+	padding-top: 110px;
+	padding-left: 65px;
+	font-size: 50px;
+	font-weight: 600;
+}
+.miss {
+	font-weight: 300;
+	font-size: 19px;
+	padding-left: 67px;
+	padding-top: 5px;
+	padding-right: 100px;
+}
+.main button {
+	margin-left: 67px;
+	margin-top: 20px;
+	background-color: #0d3a82;
+	color: white;
+	font-weight: 500;
+	font-size: 25px;
+	text-align: center;
+	border: none;
+	width: 240px;
+	height: 50px;
+    transition: all 0.3s ease-in;	
+}
+.main button:hover {
+	background-color: #d2d2fa;
+	color: #0d3a82;
+}
+.main2 img {
+	width: 890px;
+	height: 800px;
+	margin-left: 0px;
+    float: right;
+    margin-right: 70px;
+}
+.info {
+    margin-top: 100px;
+    height: 1000px;
+    width: 100%;
+}
+.aboutme {
+	width: 400px;
+	height: 100%;
+	margin-left: 100px;
+	float: left;
+}
+.aboutme span {
+	font-size: 35px;
+	font-weight: 500;
+}
+.aboutme p {
+	width: 300px;
+	font-weight: 300;
+}
+.aboutme button {
+	width: 150px;
+	height: 50px;
+	background-color: #0d3a82;
+	color: white;
+	font-weight: 500;
+	font-size: 25px;
+	text-align: center;
+	border: none;
+	margin-top: 20px;
+    transition: all 0.3s ease-in;
+}
+.aboutme button:hover {
+	background-color: #d2d2fa;
+	color: #0d3a82;
+}
+
+.objects {
+	width: 1000px;
+	height: 100%;
+	float: right;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.objects img {
+	width: 270px;
+	height: 270px;
+}
+.objects p {
+	width: 270px;
+	font-weight: 300;
+}
+.objects figcaption {
+	font-size: 25px;
+	font-weight: 500;
+}
+.reviews {
+	width: 100%;
+	height: 525px;
+	background-color: #f0f1f2;
+	padding-top: 75px;
+}
+.leftrev {
+	float: left;
+	margin-left: 100px;
+}
+.rightrev {
+	display: flex;
+	flex-flow: column wrap;
+	float: right;
+	margin-right: 250px;
+}
+.leftrev span {
+    font-weight: 500;
+    font-size: 35px;
+}
+.leftrev p {
+	font-weight: 300;
+	font-size: 18px;
+	width: 350px;
+}
+.rightrev p {
+	width: 600px;
+	font-size: 20px;
+	font-weight: 400;
+}
+.rightrev span {
+	font-weight: 500;
+	font-size: 26px;
+	text-decoration: overline;
+	padding-bottom: 50px;
+}
+.conclusion {
+	width: 100%;
+	height: 700px;
+	background-color: #adbde0;
+	padding-top: 50px;
+}
+.fi {
+	margin-left: 100px;
+	float: left;
+}
+.form {
+	margin-right: 450px;
+	float: right;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0px;
+	margin: 25px;
+}
+.fi span {
+    font-weight: 500;
+    font-size: 35px;
+    width: 0.5em;
+}
+.fi p {
+	font-weight: 300;
+	font-size: 18px;
+	width: 300px;
+}
+.form span {
+    font-weight: 500;
+    font-size: 35px;
+}
+input {
+	font-size: 25px;
+	border: none;
+	border-bottom: solid black 4px;
+	padding: 10px;
+	width: 220px;
+	background-color: #adbde0;
+	outline: none;
+}
+input:active {
+	border-bottom: solid black 3px;
+}
+input:focus {
+	border-bottom: solid black 2px;
+}
+form button {
+	width: 120px;
+	height: 50px;
+	background-color: #adbde0;
+	border: solid black 3.5px;
+	font-size: 22px;
+	font-weight: 500;
+	margin-right: 400px;
+	margin-top: 25px;
+	transition: border 0.5s ease-in;
+	transition: color 0.3s ease-in;
+	transition: background-color 0.3s ease-in;
+	min-width: 0px;
+}
+form button:hover {
+	color: white;
+	background-color: #0d3a82;
+	border: solid #0d3a82 3.5px;
+}
+.conclusion span {
+    width: 100px;
+}
+#contact {
+	font-size: 35px;
+	font-weight: 500;
+}
+.form figcaption {
+	font-size: 25px;
+	font-weight: 500;
+}
+#email {
+	width: 350px;
+}
+#message {
+	width: 500px;
+}
+.form figure {
+	margin-right: 350px;
+}
+.submit {
+	margin-right: 300px;
+}
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #adbde0;
+}
+.logo2 {
+	font-size: 25px;
+	font-weight: 300;
+	margin-left: 100px;
+	margin-top: 3px;
+	float: left;
+}
+table {
+	font-size: 20px;
+	font-weight: 300;
+	float: right;
+	margin-right: 250px;
+}
+td {
+	width: 250px;
+	height: 25px;	
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" keywords="lessons for kids">
+	<title>about.com</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <style>
+    	* {
+  box-sizing: border-box;
+ }
+        body {
+	font-family: 'Poppins', sans-serif;
+}
+        a {
+	text-decoration: none;
+}
+        .navpannel {
+	width: 100%;
+	position: fixed;
+	height: 110px;
+	background-color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	top: 0px;
+	left: 0px;
+}
+.logo {
+	color: black;
+	font-size: 25px;
+	padding-top: 32px;
+	padding-left: 80px;
+	font-weight: 300;
+	padding-right: 350px;
+
+}
+.navbuttons {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 40px;
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.15s ease-in;
+}
+.navpannel:nth-child(2) {
+	padding-left: 100px;
+}
+.navbuttons:hover {
+	text-decoration: underline;
+}
+.main {
+	width: 100%;
+	height: 550px;
+	margin-top: 200px;
+}
+.info {
+	float: left;
+	margin-left: 100px;
+	height: 100%;
+}
+.info span {
+	font-size: 45px;
+	font-weight: 500;
+}
+.info p {
+	font-size: 18px;
+	font-weight: 300;
+	width: 350px;
+}
+.pic {
+	float: right;
+}
+.pic img {
+	width: 620px;
+	height: 450px;
+	margin-right: 200px;
+}
+.bio {
+	width: 100%;
+	height: 450px;
+}
+.leftbio {
+	float: left;
+	font-size: 40px;
+	font-weight: 500;
+	margin-left: 100px;
+}
+.rightbio {
+    float: right;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 269px;
+    width: 550px;
+}
+.education {
+	width: 100%;
+	height: 300px;
+}
+.edu {
+	float: left;
+	margin-left: 100px;
+	margin-top: 15px;
+}
+.edu span {
+	font-size: 40px;
+	font-weight: 500;
+}
+.degrees {
+	float: right;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.degrees figure {
+	width: 450px;
+}
+.degrees figcaption:not([class="figcaptionmain"]) {
+	font-weight: 300;
+}
+.degrees p {
+    font-weight: 300;
+}
+.figcaptionmain {
+	text-decoration: overline;
+	font-size: 25px;
+	font-weight: 500;
+}
+.conclusion {
+	width: 100%;
+	height: 700px;
+	background-color: #adbde0;
+	padding-top: 50px;
+}
+.fi {
+	margin-left: 100px;
+	float: left;
+}
+.form {
+	margin-right: 450px;
+	float: right;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0px;
+	margin: 25px;
+}
+.fi span {
+    font-weight: 500;
+    font-size: 35px;
+    width: 0.5em;
+}
+.fi p {
+	font-weight: 300;
+	font-size: 18px;
+	width: 300px;
+}
+.form span {
+    font-weight: 500;
+    font-size: 35px;
+}
+input {
+	font-size: 25px;
+	border: none;
+	border-bottom: solid black 4px;
+	padding: 10px;
+	width: 220px;
+	background-color: #adbde0;
+	outline: none;
+}
+input:active {
+	border-bottom: solid black 3px;
+}
+input:focus {
+	border-bottom: solid black 2px;
+}
+form button {
+	width: 120px;
+	height: 50px;
+	background-color: #adbde0;
+	border: solid black 3.5px;
+	font-size: 22px;
+	font-weight: 500;
+	margin-right: 400px;
+	margin-top: 25px;
+	transition: border 0.5s ease-in;
+	transition: color 0.3s ease-in;
+	transition: background-color 0.3s ease-in;
+	min-width: 0px;
+}
+form button:hover {
+	color: white;
+	background-color: #0d3a82;
+	border: solid #0d3a82 3.5px;
+}
+.conclusion span {
+    width: 100px;
+}
+#contact {
+	font-size: 35px;
+	font-weight: 500;
+}
+.form figcaption {
+	font-size: 25px;
+	font-weight: 500;
+}
+#email {
+	width: 350px;
+}
+#message {
+	width: 500px;
+}
+.form figure {
+	margin-right: 350px;
+}
+.submit {
+	margin-right: 300px;
+}
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #adbde0;
+}
+.logo2 {
+	font-size: 25px;
+	font-weight: 300;
+	margin-left: 100px;
+	margin-top: 3px;
+	float: left;
+}
+table {
+	font-size: 20px;
+	font-weight: 300;
+	float: right;
+	margin-right: 250px;
+}
+td {
+	width: 250px;
+	height: 25px;	
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+    </style>
+</head>
+<body>
+	 <nav class="navpannel">
+		<div class="logo">Online lessons</div>
+		<a href="about.html"><div class="navbuttons">About</div></a>
+		<a href="bookalesson.html"><div class="navbuttons">Book a lesson</div></a>
+        <a href="packages.html"><div class="navbuttons">Packages</div></a>
+        <a href="learningtools.html"><div class="navbuttons">Learning tools</div></a>
+        <a href="index.html"><div class="navbuttons">Contact</div></a>
+        <a href="login.html"><div class="navbuttons">Log in</div></a>
+	 </nav>
+	 <div class="main">
+	 	<div class="info">
+	 		<span>Hi there, I’m Steven</span>
+	 		<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+	 	</div>
+	 	<div class="pic"><img src="steven.jpg">
+	 	</div>
+	 </div>
+	 <div class="bio">
+	 	<div class="leftbio"><span>Bio</span></div>
+	 	<div class="rightbio"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+        </p>
+        <p>
+	 	This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p></div>
+	 </div>
+	 <div class="education">
+	 	<div class="edu">
+	 		<span>Education</span>
+	 	</div>
+	 	<div class="degrees">
+	 		<figure>
+	 			<figcaption class="figcaptionmain">Bachelor's Degree in Education</figcaption>
+	 			<figcaption>Aug 1994 - May 1998</figcaption>
+	 			<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+	 		</figure>
+	 		<figure>
+	 			<figcaption class="figcaptionmain">Master's Degree in Social Studies</figcaption>
+	 			<figcaption>Oct 1999 - June 2002</figcaption>
+	 			<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+	 		</figure>
+	 	</div>
+	 </div>
+	 <div class="conclusion">
+     	 <div class="fi">
+     	     <p id="contact">Contact Me & Let's Get Started</p>
+
+     	     <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+     	 </div>
+     	 <div class="form">
+             <form>
+             	     
+             	     <figure>
+
+             	         <figcaption>First Name</figcaption>
+                     
+             	         <input type="text">
+
+                     </figure>
+                     
+                     
+                     <figure>
+
+             	         <figcaption>Last Name</figcaption>
+
+             	         <input type="text">
+
+             	     </figure>
+                    
+                    <figure>
+                    	 <figcaption>Email*</figcaption>
+
+                    	 <input type="text" id="email">
+
+                     </figure>
+
+                     <figure>
+                     	 <figcaption>Message</figcaption>
+
+                     	 <input type="text" id="message">
+                     </figure>
+                     <div class="submit">
+                     <button>Submit</button>
+                     </div>
+
+             </form>
+     	 </div>
+     </div>
+     <footer>
+     	<div class="logo2">Online Lessons</div>
+     	<table>
+     		<tr>
+     			<td><a href="about.html">About</td>
+     			<td><a mailto:kirzha.kirill03@mail.ru>My email</td>
+     			<td>© 2021 by Online Lessons.</td>
+     		</tr>
+     		<tr>
+     			<td><a href="bookalesson.html">Book A Lesson</td>
+     			<td>123-456-789</td>
+     			<td>Proudly created with KKS</td>
+     		</tr>
+     		<tr>
+     			<td><a href="packages.html" colspan="3">Packages</td>
+     		</tr>
+     		<tr>
+     			<td><a href="materials.html" colspan="3">Materials</td>
+     		</tr>
+     </footer>
+</body>
+</html>

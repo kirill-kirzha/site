@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" keywords="lessons for kids">
+	<title>bookalesson.com</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <style>
+    	* {
+  box-sizing: border-box;
+ }
+body {
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.navpannel {
+	width: 100%;
+	position: fixed;
+	height: 110px;
+	background-color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	top: 0px;
+	left: 0px;
+}
+.logo {
+	color: black;
+	font-size: 25px;
+	padding-top: 32px;
+	padding-left: 80px;
+	font-weight: 300;
+	padding-right: 350px;
+
+}
+.navbuttons {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 40px;
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.15s ease-in;
+}
+.navpannel:nth-child(2) {
+	padding-left: 100px;
+}
+.navbuttons:hover {
+	text-decoration: underline;
+}
+.book {
+	width: 100%;
+	height: 250px;
+	margin-top: 170px;
+}
+.header {
+	font-size: 55px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.information {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	width: 950px;
+	margin-left: 275px;
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+.header2 {
+	text-align: center;
+	font-size: 45px;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+.intro div {
+	width: 100px;
+	height: 100%;
+}
+.intro {
+	width: 65%;
+	margin-left: 17.5%;
+	margin-right: 17.5%;
+	border: none;
+	border-top: solid black 3.5px;
+	border-bottom: solid black 3.5px;
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+	margin-top: 30px;
+}
+.introleft {
+    margin-left: 0px;
+}
+.introright {
+	margin-left: 250px;
+}
+.introcenter {
+	margin-left: 407px;
+}
+.introcenter p {
+	font-weight: 300;
+}
+.introleft p:nth-child(1) {
+	font-weight: 600;
+	font-size: 20px;
+	transition: color 0.3s ease-in;
+}
+.introleft p:nth-child(2) {
+	text-decoration: underline;
+	transition: color 0.3s ease-in;
+}
+.introleft p:nth-child(1):hover {
+	color: #9da19e;
+}
+.introleft p:nth-child(2):hover {
+	color: #9da19e;
+}
+.introright button {
+	width: 120px;
+	height: 45px;
+	color: white;
+	padding: 8px;
+	font-size: 20px;
+	font-weight: 500;
+	background-color: #0d3a82;
+	border: none;
+	transition: opacity 0.3s ease-in;
+}
+.introright button:hover {
+	opacity: 60%;
+}
+body .intro:nth-child(1n+1) {
+	border-top: none;
+}
+.conclusion {
+	width: 100%;
+	height: 700px;
+	background-color: #adbde0;
+	padding-top: 50px;
+	margin-top: 100px;
+}
+.fi {
+	margin-left: 100px;
+	float: left;
+}
+.form {
+	margin-right: 450px;
+	float: right;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0px;
+	margin: 25px;
+}
+.fi span {
+    font-weight: 500;
+    font-size: 35px;
+    width: 0.5em;
+}
+.fi p {
+	font-weight: 300;
+	font-size: 18px;
+	width: 300px;
+}
+.form span {
+    font-weight: 500;
+    font-size: 35px;
+}
+input {
+	font-size: 25px;
+	border: none;
+	border-bottom: solid black 4px;
+	padding: 10px;
+	width: 220px;
+	background-color: #adbde0;
+	outline: none;
+}
+input:active {
+	border-bottom: solid black 3px;
+}
+input:focus {
+	border-bottom: solid black 2px;
+}
+form button {
+	width: 120px;
+	height: 50px;
+	background-color: #adbde0;
+	border: solid black 3.5px;
+	font-size: 22px;
+	font-weight: 500;
+	margin-right: 400px;
+	margin-top: 25px;
+	transition: border 0.5s ease-in;
+	transition: color 0.3s ease-in;
+	transition: background-color 0.3s ease-in;
+	min-width: 0px;
+}
+form button:hover {
+	color: white;
+	background-color: #0d3a82;
+	border: solid #0d3a82 3.5px;
+}
+.conclusion span {
+    width: 100px;
+}
+#contact {
+	font-size: 35px;
+	font-weight: 500;
+}
+.form figcaption {
+	font-size: 25px;
+	font-weight: 500;
+}
+#email {
+	width: 350px;
+}
+#message {
+	width: 500px;
+}
+.form figure {
+	margin-right: 350px;
+}
+.submit {
+	margin-right: 300px;
+}
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #adbde0;
+}
+.logo2 {
+	font-size: 25px;
+	font-weight: 300;
+	margin-left: 100px;
+	margin-top: 3px;
+	float: left;
+}
+table {
+	font-size: 20px;
+	font-weight: 300;
+	float: right;
+	margin-right: 250px;
+}
+td {
+	width: 250px;
+	height: 25px;	
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+    </style>
+</head>
+<body>
+	<nav class="navpannel">
+		<div class="logo">Online lessons</div>
+		<a href="about.html"><div class="navbuttons">About</div></a>
+		<a href="bookalesson.html"><div class="navbuttons">Book a lesson</div></a>
+        <a href="packages.html"><div class="navbuttons">Packages</div></a>
+        <a href="learningtools.html"><div class="navbuttons">Learning tools</div></a>
+        <a href="index.html"><div class="navbuttons">Contact</div></a>
+        <a href="login.html"><div class="navbuttons">Log in</div></a>
+	 </nav>
+
+	<div class="book">
+	<p class="header">Book an Online Session</p>
+
+	<p class="information">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+
+	<p class="header2">Start learning today</p>
+    </div>
+
+    <div class="intro">
+    	<div class="introleft">
+    		<p>Introduction</p>
+    		<p>Read more</p>
+    	</div>
+    	<div class="introcenter">
+    		<p>45 min</p>
+    		<p>Free</p>
+    	</div>
+    	<div class="introright">
+    	<button>Book now</button>
+        </div>
+    </div>
+    <div class="intro">
+    	<div class="introleft">
+    		<p>English</p>
+    		<p>Read more</p>
+    	</div>
+    	<div class="introcenter">
+    		<p>45 min</p>
+    		<p>$39</p>
+    	</div>
+    	<div class="introright">
+    	<button>Book now</button>
+        </div>
+    </div>
+    <div class="intro">
+    	<div class="introleft">
+    		<p>Science</p>
+    		<p>Read more</p>
+    	</div>
+    	<div class="introcenter">
+    		<p>45 min</p>
+    		<p>$39</p>
+    	</div>
+    	<div class="introright">
+    	<button>Book now</button>
+        </div>
+    </div>
+    <div class="intro">
+    	<div class="introleft">
+    		<p>History</p>
+    		<p>Read more</p>
+    	</div>
+    	<div class="introcenter">
+    		<p>45 min</p>
+    		<p>$39</p>
+    	</div>
+    	<div class="introright">
+    	<button>Book now</button>
+        </div>
+    </div>
+    <div class="intro">
+    	<div class="introleft">
+    		<p>Math</p>
+    		<p>Read more</p>
+    	</div>
+    	<div class="introcenter">
+    		<p>45 min</p>
+    		<p>$39</p>
+    	</div>
+    	<div class="introright">
+    	<button>Book now</button>
+        </div>
+    </div>
+    <div class="conclusion">
+     	 <div class="fi">
+     	     <p id="contact">Contact Me & Let's Get Started</p>
+
+     	     <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+     	 </div>
+     	 <div class="form">
+             <form>
+             	     
+             	     <figure>
+
+             	         <figcaption>First Name</figcaption>
+                     
+             	         <input type="text">
+
+                     </figure>
+                     
+                     
+                     <figure>
+
+             	         <figcaption>Last Name</figcaption>
+
+             	         <input type="text">
+
+             	     </figure>
+                    
+                    <figure>
+                    	 <figcaption>Email*</figcaption>
+
+                    	 <input type="text" id="email">
+
+                     </figure>
+
+                     <figure>
+                     	 <figcaption>Message</figcaption>
+
+                     	 <input type="text" id="message">
+                     </figure>
+                     <div class="submit">
+                     <button>Submit</button>
+                     </div>
+
+             </form>
+     	 </div>
+     </div>
+     <footer>
+     	<div class="logo2">Online Lessons</div>
+     	<table>
+     		<tr>
+     			<td><a href="about.html">About</td>
+     			<td><a mailto:kirzha.kirill03@mail.ru>My email</td>
+     			<td>© 2021 by Online Lessons.</td>
+     		</tr>
+     		<tr>
+     			<td><a href="bookalesson.html">Book A Lesson</td>
+     			<td>123-456-789</td>
+     			<td>Proudly created with KKS</td>
+     		</tr>
+     		<tr>
+     			<td><a href="packages.html" colspan="3">Packages</td>
+     		</tr>
+     		<tr>
+     			<td><a href="materials.html" colspan="3">Materials</td>
+     		</tr>
+     </footer>
+</body>
+</html>
